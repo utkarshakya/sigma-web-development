@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 50vh;
+        }
+
+        .box{
+            height: 50%;
+            width: 50%;
+            border: 2px solid black;
+        }
+
+        .box:hover{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: firstAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; */
+            /* animation: firstAnimation 3s ease-in forwards; */
+            animation: secondAnimation 5s forwards;
+
+        }
+
+        /*This is a way of defining an Animation funtion, we can use it any where we want to.*/
+        @keyframes firstAnimation {
+            from{
+
+            }
+            
+            to{
+                transform: scale(1.5);
+                background-color: aliceblue;
+                border-radius: 10px;
+            }
+        }
+        /*We can also do this way*/
+        @keyframes secondAnimation {
+            0%{
+                background-color: pink;
+            }
+            50%{
+                background-color: rgb(124, 255, 107);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

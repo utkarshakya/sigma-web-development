@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Object Position</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container1{
+            width: 300px;
+            height: 200px;
+            border: 4px solid rgb(0, 102, 255);
+            background-image: url("image.png");
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+
+        .container2{
+            width: 300px;
+            height: 200px;
+            border: 4px solid rgb(255, 106, 0);
+        }
+
+        .container2 img{
+            width: 250px;
+            height: 190px;
+            border: 2px solid rgb(0, 255, 0);
+            /* object-fit: fill; This is by default */
+            /* object-fit: contain; This will contain the max dimention and left the remaining space*/ 
+            object-fit: cover;
+            object-position: top right;
+            /*Two properties given above work according to their width and height, and not depend on the container width and height.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container1"></div>
+    <div class="container2">
+        <img src="image.png" alt="">
+    </div>
+</body>
+</html>

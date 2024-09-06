@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* 
+        Here are some main types of Selectors in CSS:
+        1. Name Selectors
+        2. Class Selectors
+        3. ID Selectors
+        4. Child Selectors
+        5. Decendent Selectors
+        6. Pseudo Selectors
+        7. Attribute Selectors
+        */
+
+        div{
+            margin: 10px;
+            padding: 10px;
+            background: aliceblue;
+        }
+
+        /* This is child selector */
+        div > p{
+            background-color: pink;
+        }
+
+        /* Below is decendent selector, Uncomment the below line of code to see the difference */
+        /*
+        div p{
+            background-color: aquamarine;
+        }
+        */
+
+        /* Now the pseudo selectors */
+        a:hover{
+            color: darkred;
+        }
+
+        /* Attribute Selectors */
+        [type=I]{
+            border: 2px dashed black;
+            display: flex;
+        }
+        li{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a normal div tag.
+    </div>
+    <div class="coco">
+        This is a div tag with a class.
+    </div>
+    <div id="noba">
+        And This one is with ID.
+    </div>
+    <div>
+        <p>
+            This is para inside a div tag and it is the direct child of div
+        </p>
+        <section>
+            <p>This is also child of div but, since it is not the direct child of div, since it is a direct child of section tag here thats why the child property not work. We Can Use Decendent Selector to do this work.</p>
+        </section>
+    </div>
+
+    <a href="www.google.com">Google</a>
+    <a href="www.facebook.com">Facebook</a>
+
+    <ol type="I">
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Papaya</li>
+        <li>Grapes</li>
+        <li>Apple</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+[Exercise No. 6] [Video No. 41]
+
+Make a navigation bar as given in the image.png file.

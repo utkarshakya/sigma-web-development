@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce A Ball</title>
+    <style>
+        .container {
+            width: 1050px;
+            height: 650px;
+            background-color: blue;
+            border: 6px solid red;
+            position: relative;
+        }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 60px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animateX 3s linear 1s infinite alternate, animateY 1s ease-out 1s infinite alternate;
+        }
+
+        @keyframes animateX {
+            form{
+                
+            }
+            to{
+                left: 1000px;
+            }
+        }
+        @keyframes animateY {
+            form{
+                
+            }
+            to{
+                transform: translateY(-600px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

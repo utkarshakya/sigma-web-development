@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling Using CSS</title>
+    <style>
+        nav ul li {
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid mediumseagreen;
+            list-style-position: inside;
+            /* This will inside the markers */
+            list-style-type: none;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul a:hover{
+            /* border: 2px solid mediumseagreen; */
+            background-color: rgb(229, 255, 241);
+            text-decoration: underline;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events, Events Bubbling, setInterval and setTimeout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Namaste, Aapka Swagat Hai Hamare Desh Me.</h2>
+        </div>
+        <div class="button">
+            <div class="change">To Change The Above Message In English, Click The Button Below.</div>
+            <button>Click Here</button>
+        </div>
+    </div>
+    <script src="script.js">
+        // Event Bubbling: When we add any event listner to an element and it will get fired to its parent, parent's parent and so on then it is called event bubbling.
+        // We can stop event bubbling by add stopPropagation() function to an event object inside the event listner body, like e.stopPropagation().
+        // We can also remove event listner as element.removeEventListner().
+    </script>
+</body>
+
+</html>

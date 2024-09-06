@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid black;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 400px;
+            border: 4px solid red;
+            margin: 10px;
+        }
+
+        #img1{
+            filter: blur(5px);
+        }
+        #img2{
+            filter: brightness(200%);
+        }
+        #img3{
+            filter: grayscale(1);
+        }
+        #img4{
+            filter: sepia(1);
+        }
+        #img5{
+            filter: contrast(200%);
+        }
+        #img6{
+            filter: drop-shadow(20px 20px 40px red);
+            /*drop-shadow(x, y, spread, color)*/
+        }
+        #img7{
+            filter: invert(1);
+        }
+        #img8{
+            filter: opacity(0.5);
+        }
+        #img9{
+            filter: saturate(150%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" id="img1" title="Blur">
+        <img src="image.png" id="img2" title="Brightness">
+        <img src="image.png" id="img3" title="Grayscale">
+        <img src="image.png" id="img4" title="Sepia">
+        <img src="image.png" id="img5" title="Contrast">
+        <img src="image.png" id="img6" title="Shadow">
+        <img src="image.png" id="img7" title="Invert">
+        <img src="image.png" id="img8" title="Opecity">
+        <img src="image.png" id="img9" title="Saturation">
+    </div>
+</body>
+</html>

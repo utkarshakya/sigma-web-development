@@ -1,0 +1,13 @@
+Core Web Vitals:
+
+1) CLS (Cumilative Layout Shift) - This has to be less in the webpage.
+2) LCP (Largest Contentful Paint) - This has to be 2.5 seconds or less.
+3) FID (First Input Delay) - This has to be 100 miliseconds or less.
+
+Note: These three core web vitals are very important for ranking your webpage on a
+search engine. There are other vitals as well but these three are core.
+
+Lighthouse: It is a browser tool which is used for analyzing your web page
+for Mobile and Desktop. It is very useful and hepls in improving load time
+of the web page which ultimatly hepls in good ranking and better SEO.
+You can find this tool in the inspect tool of your web page.

@@ -1,0 +1,5 @@
+[Exercise No. 5] [Video No. 37]
+
+Make a simply webpage having navigation bar, main and footer and an image which has fixed position at the bottom right corner. Remember these two things :-
+1. Make your navigation bar sticky.
+2. Include two boxes of same size in one row and one big box below them, also the main must have boxes with large height so that a horizontal scroll bar will come.

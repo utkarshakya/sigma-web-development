@@ -1,0 +1,3 @@
+[Exercise No. 12] [Video No. 70]
+
+You Are Given Five Boxes, WAP To Assign Random Color And Background Color To Them Using DOM Manipulation.

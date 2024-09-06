@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vriables In CSS</title>
+    <style>
+        :root {
+            /* These are globle variables */
+            --color: rgb(111, 0, 255);
+            --borderColor: rgb(255, 109, 109);
+            --bgColor: rgb(255, 254, 224);
+        }
+
+        div {
+            border: 2px solid var(--borderColor);
+            background-color: var(--bgColor);
+            padding: 10px;
+            margin: 30px;
+        }
+
+        p {
+            --borderColor: black;
+            /*This is called a local variable*/
+            border: 2px solid var(--borderColor);
+            color: var(--color);
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium nam et, ducimus maxime omnis
+            at rem unde reiciendis voluptatum non quo eius.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consequuntur dolorum accusantium.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, explicabo. Est labore velit ducimus
+            exercitationem excepturi modi reprehenderit? Porro eum necessitatibus officia quos quas quasi, molestias est
+            placeat architecto sunt! Tempore, ex! Maxime, provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione, veritatis saepe ipsum atque nulla quis
+            illo quia doloremque dolores aspernatur ut ad officiis vero sint inventore commodi. Possimus, esse quo
+            voluptates atque debitis quibusdam consectetur totam in impedit accusamus unde dolorem nesciunt a facere.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti doloremque officiis, nobis ipsum
+            corporis, facilis omnis ullam, voluptatibus voluptas blanditiis mollitia voluptates.</p>
+    </div>
+</body>
+
+</html>

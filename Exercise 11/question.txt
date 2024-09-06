@@ -1,0 +1,8 @@
+[Exercise No. 11] [Video No. 65]
+
+WAP to calculate the Factorial of the given number using JavaScript.
+
+Use These Tow Approches:
+    1. Using Loop Method
+    2. Using Reduce Method
+Make Funcitons Then Solve

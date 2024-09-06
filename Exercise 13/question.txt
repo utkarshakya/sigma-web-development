@@ -1,0 +1,4 @@
+[Exercise No. 13] [Video No. 73]
+
+Create a dynamic card using JavaScript like the one given in the sample.png file.
+Note: The title, channel name, no. of view, uploded date, thumbnail link and duration you take from user and then generate.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <!--
+        Cascade is an algorithm for solving conflicts where multiple CSS rules apply to an HTML element.
+        For example: if we write a style of <p> element two times using element selector then the one written below is considered by the browser Or we can say the below one overwrites the above one.
+    -->
+    <!-- 
+        But What if I use different selectors for styling the same element? Well, This is where the concept of SPECIFICITY comes.
+        So, Specificity of different element is like given below:
+
+        { INLINE CSS > ID SELECTOR > CLASS OR ATTRIBUTE SELECTOR > ELEMENT SELECTOR > UNIVERSAL SELECTOR }
+
+    -->
+    <style>
+        * {
+            background-color: antiquewhite;
+        }
+
+        /* Class has more specificity then universal slector */
+        .para{
+            color: navy !important;
+            background-color: rgb(215, 255, 215);
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        /* Id has more than class, So you can see the difference */
+        #paraOne{
+            color: brown;
+        }
+    </style>
+
+    <!-- NOTE: If we use !important in any property while styling the it'll be the most specific even more than inline styling. You can see that in above code.-->
+
+</head>
+
+<body>
+    <div>
+        <p id="paraOne" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quidem maxime. Consequuntur ad, amet unde
+            deleniti esse porro possimus cumque excepturi.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt perferendis iste?</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nam quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum esse deleniti eius architecto
+            voluptatem tempore dicta voluptatum.</p>
+    </div>
+</body>
+
+</html>

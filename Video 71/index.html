@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation - Inserting and Removing Elements</title>
+</head>
+
+<body>
+    <div class="container" data-createdBy="kingpin" data-deliveredBy="Spider">
+        <div class="box" style="border: 2px solid black">Hello I am a Box</div>
+    </div>
+    <script>
+        // ELEMENT METHODS:
+
+        // document.querySelector(".box").innerHTML
+        // 'Hello I am a Box'
+        // document.querySelector(".box").innerHTML = "I am Time"
+        // 'I am Time'
+        // document.querySelector(".container").innerText
+        // 'Hello I am a Box'
+        // document.querySelector(".container").outerHTML
+        // '<div class="container">\n        <div class="box">Hello I am a Box</div>\n    </div>'
+        // document.querySelector(".container").tagName
+        // 'DIV'
+        // document.querySelector(".container").nodeName
+        // 'DIV'
+        // document.querySelector(".box").hidden
+        // false
+        // document.querySelector(".box").hidden = true
+        // true
+        // There are some Insertion Methods Like:
+        // node.append(), node.prepend(), node.before(), node.after(), node.replaceWith()
+        // node.insertAdjecentHTML/Text/Element("afterbegin/afterend/beforebegin/beforeend", "HTML/Text/Element")
+        // To remove any element --> node.remove()
+        // document.querySelector(".container").classList
+        // DOMTokenList['container', value: 'container']
+        // document.querySelector(".container").className
+        // 'container'
+        // document.querySelector(".container").classList.add("hello")
+        // undefined
+        // document.querySelector(".container").classList.remove("hello")
+        // undefined
+        // Toggle method of class used to switch on or Off the class, means if class is not present it will add it and if it is then it'll remove it.
+        // document.querySelector(".container").classList.toggle("hello")
+        // true
+        // document.querySelector(".container").classList.toggle("hello")
+        // false
+
+        // ATTRIBUTE METHODS:
+
+        // document.querySelector(".box").hasAttribute("style")
+        // true
+        // document.querySelector(".box").getAttribute("style")
+        // 'border: 2px solid black'
+        // document.querySelector(".box").setAttribute("style", "background-color: pink") --> This will add style attribute in the .box
+        // undefined
+        // document.querySelector(".box").attributes --> gives the array of all attributes
+
+
+        // MORE METHODS:
+        // document.designMode = "on" --> This will on the desing mode in the browser by which we can manipulate any text in the website.
+        // document.querySelector(".box").dataset
+        // DOMStringMap { }
+        // document.querySelector(".container").dataset
+        // DOMStringMap { createdby: 'kingpin', deliveredby: 'Spid' }
+
+    </script>
+</body>
+
+</html>

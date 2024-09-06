@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        /* Here are some important and most useful units of sizing */
+        /* px, vw, vh, em, rem, %, vmin, vmax, etc. */
+        *{
+            margin: 0px auto;
+        }
+        .first {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 0px auto;
+            width: 80vw;
+            min-height: 10vh;
+            /* 80vw mean 80 percent of the total width of the screen */
+        }
+
+        .second {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 0px auto;
+            width: 80vw;
+            height: 80vh;
+            font-size: 10px;
+        }
+
+        .second p {
+            font-size: 2em;
+            /* In CSS if we don't give size to the child element then it inherits its parents size, Now here this <p> tag must have inherits this 20px from its parent div which we provided above. So this unit em actually works on the inherited size of the element if we give 2em means 2 times the inherited size. So this <p> must have 40px. This how em works. */
+        }
+        html{
+            font-size: 5px;
+        }
+        .third{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 0px auto;
+            height: 10vh;
+            width: 80%; /* This will take 80% of its parent which is <body> here in this case.*/
+            font-size: 2rem; /* This rem unit is same as em but only difference is that it works on the size that are inherited from root element. Note that <html> element is called the root element. So this .third class element got 2 times the size of the root element. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet maxime rem neque, vitae adipisci illum quia
+        autem omnis facilis soluta voluptatibus? Ipsum!
+    </div>
+    <div class="second">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente expedita, ipsa repellendus dignissimos,
+            minus tempora ducimus officia laborum aspernatur possimus nam veniam, magni nemo reiciendis doloremque.
+            Dolorem perferendis excepturi vero ut quidem. Minima explicabo expedita nisi ab blanditiis nam deleniti vero
+            nostrum quia cum aut dolor, totam dignissimos neque inventore? Quod quos illum, molestias veniam dolorum
+            impedit iste dignissimos! Nesciunt, dignissimos iste beatae soluta neque deleniti officiis harum quod,
+            assumenda voluptates quas ipsum molestiae dolores. Rem voluptatibus fugiat iure tenetur animi sequi fugit
+            nesciunt quam harum ullam, nostrum odio iusto cupiditate, dolor obcaecati. Odio et, nostrum porro architecto
+            pariatur eius alias molestiae, facilis obcaecati expedita quaerat cumque aliquam quo asperiores provident
+            tenetur, doloremque in harum voluptatum. Est dolorum molestias exercitationem, architecto quidem debitis.
+        </p>
+    </div>
+    <div class="third">
+        Lorem ipsum dolor sit amet.
+    </div>
+</body>
+
+</html>

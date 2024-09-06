@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .box{
+            width: 280px;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 48px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+
+    <script>
+        function getRandom(){
+            let red = Math.ceil(0 + Math.random()*(255-0));
+            let green = Math.ceil(0 + Math.random()*(255-0));
+            let blue = Math.ceil(0 + Math.random()*(255-0));
+            return `rgb(${red} ${green} ${blue})`
+        }
+
+        let arr = Array.from(document.getElementsByClassName("box")) // This will create an array from the HTML collection
+        arr.forEach(e=>{ // Through this we'll traverse array
+            e.style.backgroundColor = getRandom();
+            e.style.color = getRandom();
+        })
+    </script>
+</body>
+</html>

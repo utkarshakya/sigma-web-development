@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border-bottom: 2px solid black;
+}
+
+.container{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 180px auto 0px auto;
+    border: 2px solid black;
+    border-bottom: none;
+}
+.card{
+    width: 90%;
+    height: 148px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border-radius: 5px;
+}
+.media{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: url("thumbnail.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.duration{
+    margin: 5px 8px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    z-index: 3;
+}
+.text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+}
+
+.title{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.subs{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 5px;
+    color: rgb(180, 180, 180);
+}
+
+.headings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 100px;
+}
+
+.headings h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.headings h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.button button{
+    margin: 30px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 30px;
+}
+
+@media (800px < width < 1200px){
+    
+}

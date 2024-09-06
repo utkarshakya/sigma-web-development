@@ -1,0 +1,20 @@
+[Exercise No. 10] [Video No. 62]
+
+Create a business name generator by combining list of Adjectives and Shop Name and Another Word As Follow:
+
+Adjectives:
+Crazy 
+Amazing
+Fire 
+
+Shop Name:
+Engine
+Foods
+Garments
+
+Another Word:
+Bros
+Limited
+Hub
+
+NOTE: There is one condition in this question you have to do this without using Arrays.

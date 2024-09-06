@@ -1,0 +1,3 @@
+[Exercise No. 8] [Video No. 48]
+
+Make a bouncing animation of a ball given in a sample.html file.

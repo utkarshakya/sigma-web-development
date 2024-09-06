@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation - Class, Id and More</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="pink">Boxes</div>
+        <div class="box">Boxes</div>
+        <div class="box">Boxes</div>
+        <div class="box">Boxes</div>
+        <div class="box">Boxes</div>
+    </div>
+    <script>
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        console.log("Namaste India");
+        let box = document.getElementsByClassName("box");
+        console.log(box);
+        box[2].style.backgroundColor = "lightblue";
+        let pinkbox = document.getElementById("pink");
+        pinkbox.style.backgroundColor = "pink";
+
+        // UNCOMMENT THESE TO SEE THE CHANGES.
+        // document.querySelector(".container").style.backgroundColor = "green" // This one returns a single element.
+        // document.querySelectorAll(".box").forEach(i => (i.style.backgroundColor = "blue")) // this will return a HTML collection.
+
+        let tagName = document.getElementsByTagName("div");
+        console.log(tagName);
+
+        // matches, closest and contains are also useful methords works in accordance to their name. Chenk Notes PDF page 38 to know more.
+    </script>
+</body>
+
+</html>

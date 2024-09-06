@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Using Loop
+        function factorialUsingLoop(num){
+            let factorial = 1;
+            for (i = num; i > 1; i--) {
+                factorial *= i;
+            }
+            console.log(`Factorial using Loop function : ${factorial}`);
+            return factorial;
+        }
+
+        // Using reduce
+        function factorialUsingReduce(num){
+            let array = Array.from(Array(num+1).keys());
+            console.log(array);
+            array = array.slice(1,);
+            console.log(array);
+            let factorial = array.reduce((a,b) => a*b);
+            console.log(`Factorial using Reduce function : ${factorial}`);
+            return factorial;
+        }
+
+        let num = Number(prompt("Enter A Number"));
+        let factorialL = factorialUsingLoop(num);
+        let factorialR = factorialUsingReduce(num);
+        alert(`Factorial of ${num} = ${factorialR}`);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Properties</title>
+    <style>
+        *{
+            background-color: black;
+        }
+
+        .box{
+            border: 10px solid white;
+            color: white;
+            margin: 30px;
+            padding: 20px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #firstBox{
+            box-sizing: border-box;
+            height: 300px;
+            /* Here this height is not the height of the content it is the height of "content + padding + border" combined, which comes due to the use of box-sizing property.*/
+        }
+
+        #secondBox{
+            /* box-sizing: border-box; */
+            height: 300px;
+            /* You Can See the difference here, where we don't use box-sizing property.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="firstBox">Box One</div>
+    <div class="box" id="secondBox">Box Two</div>
+</body>
+</html>
+
+<!-- NOTE: Margin Collapse is a concept through when tow margins overlaps each other then the big one will considered by the browser.
+For Example : Yor can see above that both boxes have same margin, So the bottom margin of box one is 30px and the top margin of box two is also 30px so there has to be 60px between them but this is not happend because of the margin collapse used by the browser, here 30px is big so it used 30px bettween them where the overlaps. This is a simple concept of margin collapse. -->

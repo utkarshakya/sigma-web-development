@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        /*
+            justify-content and align-itmes works according to main and cross axis.
+
+            when flex-direction is row(default) then horizontal axis is main axis,
+            and if it is coloum then horizontal axis is cross axis and vise versa in
+            case of vertical axis.
+        */
+        .container {
+            display: flex;
+            border: 2px solid white;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /*this tells the space between individual items of the flexbox*/
+            padding: 20px;
+        }
+
+        .box{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link{
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+
+        /* Here are some more property of items of flexbox :-
+            1. order: oreder number;
+            2. flex-grow: value;
+            3. flex-shrink: value;
+            4. flex-self: value;
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="link"><div class="box">1</div></a>
+        <a href="#" class="link"><div class="box">2</div></a>
+        <a href="#" class="link"><div class="box">3</div></a>
+        <a href="#" class="link"><div class="box">4</div></a>
+        <a href="#" class="link"><div class="box">5</div></a>
+        <a href="#" class="link"><div class="box">6</div></a>
+        <a href="#" class="link"><div class="box">7</div></a>
+        <a href="#" class="link"><div class="box">8</div></a>
+        <a href="#" class="link"><div class="box">9</div></a>
+    </div>
+</body>
+</html>

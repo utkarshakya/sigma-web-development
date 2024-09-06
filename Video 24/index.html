@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows And Outlines</title>
+</head>
+<style>
+    /* This is syntax of Shadow:-
+    
+        box-shadow: h-offset v-offset blur spread color inset;
+        where,
+        h-offset & v-offset = horizontal and vertical position of shadow.
+        blur = make shadow blurrier.
+        spread = expands or shrink the shadow size.
+        color = determines the shadow color.
+        inset = make the shadow inner.
+    */
+
+    /*
+    Similar to box-shadow there is one more property called text-shadow.
+    text-shadow don't have spread and inset values. 
+    */
+
+    div {
+        border: 2px solid red;
+        box-shadow: 5px 5px 5px 0px rgb(255, 150, 150);
+        /* This is Shadow */
+        margin: 30px;
+        padding: 20px;
+        text-shadow: 5px 5px 2px rgb(255, 179, 179);
+        /* This is text-shadow */
+        outline: 3px solid black;
+        /* This is outline */
+        outline-offset: 5px;
+    }
+
+    /*
+    Outlines are very similar to borders but here are some key differences :-
+    1. Position: They don't take up space means they are not the part of box-model, they're drawn around the element, outside of the border.
+    2. Offset: Using outline-offset property we can set a space between an outline and the edges of border.
+    3. Width: Unlike border we can not have different width at different sides of outline, it is uniform on all sides.
+    4. Rounded Corners: Unlike border which has border-radius, outlines don't have any such property, they just take the shape of the border corners.
+    */
+</style>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione fugit illum.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati!
+    </div>
+</body>
+
+</html>
