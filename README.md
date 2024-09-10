@@ -11,4 +11,4 @@ _NOTE: This course is a video course uploaded by an Youtuber namely [CodeWithHar
 - __And Check [this](https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=yJ8KRWARuXEafajA) Playlist To See The Video Of The Same Topic.__
 
 ---
-Thank you for visiting & wish you all the very best. Click [here](https://utkarshakya.rf.gd/?i=1) to know more about me.
+Thank you for visiting & All the best. Click [here](https://utkarshakya.rf.gd/?i=1) to know more about me.
