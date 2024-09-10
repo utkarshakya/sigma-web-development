@@ -1,4 +1,4 @@
-# SIGMA WEB DEVELOPMENT COURSE DOCS
+# Sigma Web Development Course Docs
 
 _NOTE: This course is a video course uploaded by an Youtuber namely [CodeWithHarry](https://youtube.com/@codewithharry?si=1FO1nXnOVz4OGdGK) on Youtube for free. So all credits goes to him, I just studied from this course and documented it. Remember this documentation did not cover each and every basic topic but has much to get you start. And this is not completed yet and will be updated soon._
 
