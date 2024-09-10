@@ -1,8 +1,6 @@
-// DESCRIPCTION OF EXERCIES IS GIVEN INSIDE THERE INDIVIDUAL FOLDERS IN question.txt FILE.
+// NOTE: Description of exercise is given in question.txt file inside the specific exercise folder.
 
-
-
-<< --FRONTEND-- >>
+<< --- --- --- FRONTEND --- --- --- >>
 
 << HTML And CSS >>
 Video 06 - Core Web Vitals
@@ -43,14 +41,8 @@ Video 82 - Advance JavaScript
 Video 83 - Interview Questions
 Video 84 - Project-2 (Spotify Home Page Clone (Fully Funcional))
 
-
-
-<< --BACKEND-- >>
+<< --- --- --- BACKEND --- --- --- >>
 
 << JAVASCRIPT >>
 Video 85 - Basics Of Nodejs And npm (Node Package Manager)
 Video 86 - CommonJS Modules VS EcmaScript Modules
-Video 87 - Working With Files: fs And path Modules
-Video 88 - Introduction To Express Js
-Video 89 - Response, Request and Routers In Express
-Video 90 - Middlewares In Express Js
