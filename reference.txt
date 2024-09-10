@@ -44,5 +44,4 @@ Video 84 - Project-2 (Spotify Home Page Clone (Fully Funcional))
 << --- --- --- BACKEND --- --- --- >>
 
 << JAVASCRIPT >>
-Video 85 - Basics Of Nodejs And npm (Node Package Manager)
-Video 86 - CommonJS Modules VS EcmaScript Modules
+// To be continue...
